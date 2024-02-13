@@ -20,7 +20,7 @@ const loginHandler = async (request, h) => {
     if (user.role === 'admin') {
       return h.response({ message: 'Admin login successful, Access all opertion ', user }).code(200);
     } else {
-      return h.response({ message: 'User login successful', user }).code(200);
+      return h.response({ message: 'User login successful, Access read only ', user }).code(200);
     }
 
     // If user is an admin, return success response
