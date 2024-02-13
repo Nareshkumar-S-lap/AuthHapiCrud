@@ -1,0 +1,6 @@
+node_modules/
+.env
+interc.js
+package-lock.json
+package.json
+.eslintric.json
