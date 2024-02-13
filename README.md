@@ -1,4 +1,4 @@
-# My Awesome API
+# Student API
 
 Welcome to the documentation of My Awesome API! This API provides endpoints for managing student enquiries.
 
