@@ -18,13 +18,13 @@ const loginHandler = async (request, h) => {
     // }
     // Check user's role
     if (user.role === 'admin') {
-      return h.response({ message: 'Admin login successful', user }).code(200);
+      return h.response({ message: 'Admin login successful, Access all opertion ', user }).code(200);
     } else {
       return h.response({ message: 'User login successful', user }).code(200);
     }
 
     // If user is an admin, return success response
-    return h.response({ message: 'Login successful', user }).code(200);
+   // return h.response({ message: 'Login successful', user }).code(200);
   } catch (error) {
     console.error('Error during login:', error);
     return h.response({ error: 'An internal server error occurred' }).code(500);
