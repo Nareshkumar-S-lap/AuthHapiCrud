@@ -85,10 +85,7 @@ const routes = [
     path: API_CONST.ENDPOINT_API.QUERIES,
     handler: StudentQueryController.getAllStudentEnquiries,
     options: {
-      auth: {
-        mode: 'try',
-        strategies: ['user', 'admin']
-      }
+      auth:  'user'
     }
   },
   {
@@ -96,10 +93,7 @@ const routes = [
     path: API_CONST.ENDPOINT_API.QUERY_BY_ID,
     handler: StudentQueryController.getStudentEnquiryById,
     options: {
-      auth: {
-        mode: 'try',
-        strategies: ['user', 'admin']
-      }
+      auth:  'user'
     }
   },
   // Admin-only routes for CRUD operations
